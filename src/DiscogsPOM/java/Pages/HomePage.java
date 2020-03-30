@@ -7,7 +7,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 
 public class HomePage extends PageObject {
-    // Data Members
     @FindBy(id = "header_logo")
     protected WebElement mainPageButton;
 
@@ -50,8 +49,7 @@ public class HomePage extends PageObject {
         click(this.searchButton);
     }
 
-    // Go to other pages
-    public void goToMainPage() {
+    public void goToHomePage() {
         click(this.mainPageButton);
     }
 
@@ -67,7 +65,6 @@ public class HomePage extends PageObject {
         click(this.shoppingCartButton);
     }
 
-    // Open menus
     public void openExploreMenu() {
         click(this.exploreMenu);
     }
